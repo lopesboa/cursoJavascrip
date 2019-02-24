@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    
+    <div id="app">
+        <ul></ul>
+    </div>
+
+
+    <script>
+        var nomes = ["Lopes", "Naiara", "Boa"];
+        var listELement = document.querySelector('ul');
+        
+        for(nome of nomes){
+            var newList = document.createElement('li');
+            var textElement = document.createTextNode(nome);
+
+            newList.appendChild(textElement);
+            listELement.appendChild(newList);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    
+    <button class="btn">Adicionar</button>
+    <div id="app">
+        
+    </div>
+
+    <script>
+        var btnElement = document.querySelector('.btn');
+        var squaresElement = document.getElementById('app');
+               
+        btnElement.onclick = function () {
+            var addDiv  = document.createElement('div');
+            addDiv.style.width = '100px'
+            addDiv.style.height = '100px'
+            addDiv.style.backgroundColor = '#f00'
+            squaresElement.appendChild(addDiv);
+        }
+    </script>
+</body>
+</html>
